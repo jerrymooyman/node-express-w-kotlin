@@ -1,0 +1,16 @@
+{
+  "name": "kotlinjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prestart": "if [ ! -f build/js/index.js ]; then echo \"Compiled file missing! Run ./gradlew build!\"; exit 1; fi",
+    "start": "node build/js/index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "express-graphql": "^0.6.11",
+    "kotlin": "^1.1.0",
+    "serve": "^5.0.4"
+  }
+}
